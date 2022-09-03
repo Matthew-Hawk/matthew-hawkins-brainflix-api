@@ -1,12 +1,11 @@
 const express = require("express")
 const app = express()
+const cors = require("cors");
+require('dotenv').config()
+const {PORT} = process.env
 
-// app.get('/', (req, res) =>{
-//     res.send('Hello world')
-// })
 
-const port = process.env.PORT || 3000
-app.listen(port, () =>{
-    console.log(`Running on port ${port}....`)
+app.listen(PORT, () =>{
+    console.log(`Running on port ${PORT}....`)
     console.log('To kill API press CTRL + C')
 })
