@@ -1,5 +1,5 @@
 //IMPORTING ALL PACKAGES
-const express = require("express")
+const express = require("express");
 const app = express()
 const cors = require("cors");
 require('dotenv').config()
@@ -12,9 +12,8 @@ app.use(cors())
 app.use(express.json())
 
 //ROUTE FOR THE VIDEO LIST
-// app.use('/', (req, res) =>{
-//     res.send(videos)
-// })
+
+
 app.use('/videos', videos)
 
 
